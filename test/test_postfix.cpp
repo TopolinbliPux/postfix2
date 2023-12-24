@@ -24,7 +24,7 @@ TEST(TArithmeticExpression, get_postfix1) {
 TEST(TArithmeticExpression, get_postfix2) {
     TArithmeticExpression expr("(8-2*3)+2-(6*9/3-1)+(8-2*3)/2*4*(7-3)/2+(6+(5-2)-8)");
     expr.ToPostfix();
-    doubl ans = expr.Calculate();
+    double ans = expr.Calculate();
     ASSERT_EQ(-4, ans);
 }
 
